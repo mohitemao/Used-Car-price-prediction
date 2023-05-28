@@ -64,6 +64,6 @@ if st.button('predict Price'):
     query=np.array([brand,Model,no_of_owner,kms_driven,mfg_year,colour,seating_capacity,
                 milage,cng_car,Diesel_car,Petrol_car,Electric_car],dtype=object)
     query=query.reshape(1,12)
-    st.title('Predicted Price for above configurations is :'+str(float(pipe.predict(query))))
+    st.title('Predicted Price for above configurations is :'+str(float(pipe.predict(query)))+ 'lakh')
 
 
